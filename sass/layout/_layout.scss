@@ -13,16 +13,17 @@
       flex: 50%;
       color: white;
       max-width: 100%;
+      padding-left: 3.5rem;
 
       &-title {
-         font-size: 3.5rem;
+         font-size: 4.5rem;
       }
 
       &-text {
-         font-size: 1.2rem;
+         font-size: 1.4rem;
          font-weight: 500;
-         padding-right: 16rem;
          line-height: 1.6;
+         padding-right: 4rem;
       }
    }
 
@@ -57,22 +58,23 @@
          width: 540px;
          background-color: white;
          border-radius: 5px;
-         padding: 3rem;
-         max-height: 474px;
+         padding: 3.8rem 3.8rem 4.7rem 3.8rem;
          max-width: 100%;
+         box-shadow: 1px 7px 3px rgba(0, 0, 0, 0.295);
 
          &-row {
             width: 100%;
-            margin: 1.5rem 0;
+            margin: 0 0 2rem 0;
+
             position: relative;
 
             input {
                width: 100%;
                height: 5.5rem;
                font-size: 1.4rem;
-               padding-left: 2rem;
+               padding-left: 1.5rem;
                border-radius: 5px;
-               margin: 0 0 1.5rem 0;
+
                border: 1px solid #dfdfdf;
                outline: none;
 
@@ -89,17 +91,17 @@
                color: red;
                font-size: 1.2rem;
                font-style: italic;
-               margin-right: 0.1rem;
-               position: absolute;
-               right: 0;
-               bottom: -5px;
-               visibility: hidden;
+               margin: 0.8rem 0.1rem 2rem 0;
+
+               display: none;
+               float: right;
             }
 
             &-icon {
                position: absolute;
-               right: 5%;
-               top: 35%;
+               top: 60%;
+               transform: translate(-170%, -50%);
+
                visibility: hidden;
             }
          }
@@ -108,6 +110,7 @@
             width: 100%;
             padding: 1.5rem;
             cursor: pointer;
+            margin-top: 0.6rem;
             background-color: $primary-green;
             border: none;
             outline: none;
@@ -175,7 +178,10 @@
    }
 }
 
-.inputs.active ~ span,
+.inputs.active ~ span {
+   display: block;
+}
+
 .inputs.active ~ img {
    visibility: visible;
 }

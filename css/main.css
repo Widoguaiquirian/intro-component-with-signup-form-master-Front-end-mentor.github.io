@@ -51,14 +51,15 @@ body {
   .wrapp-hero {
     flex: 50%;
     color: white;
-    max-width: 100%; }
+    max-width: 100%;
+    padding-left: 3.5rem; }
     .wrapp-hero-title {
-      font-size: 3.5rem; }
+      font-size: 4.5rem; }
     .wrapp-hero-text {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 500;
-      padding-right: 16rem;
-      line-height: 1.6; }
+      line-height: 1.6;
+      padding-right: 4rem; }
   .wrapp-box {
     flex: 50%;
     display: flex;
@@ -87,20 +88,19 @@ body {
       width: 540px;
       background-color: white;
       border-radius: 5px;
-      padding: 3rem;
-      max-height: 474px;
-      max-width: 100%; }
+      padding: 3.8rem 3.8rem 4.7rem 3.8rem;
+      max-width: 100%;
+      box-shadow: 1px 7px 3px rgba(0, 0, 0, 0.295); }
       .wrapp-box-form-row {
         width: 100%;
-        margin: 1.5rem 0;
+        margin: 0 0 2rem 0;
         position: relative; }
         .wrapp-box-form-row input {
           width: 100%;
           height: 5.5rem;
           font-size: 1.4rem;
-          padding-left: 2rem;
+          padding-left: 1.5rem;
           border-radius: 5px;
-          margin: 0 0 1.5rem 0;
           border: 1px solid #dfdfdf;
           outline: none; }
           .wrapp-box-form-row input::placeholder {
@@ -111,20 +111,19 @@ body {
           color: red;
           font-size: 1.2rem;
           font-style: italic;
-          margin-right: 0.1rem;
-          position: absolute;
-          right: 0;
-          bottom: -5px;
-          visibility: hidden; }
+          margin: 0.8rem 0.1rem 2rem 0;
+          display: none;
+          float: right; }
         .wrapp-box-form-row-icon {
           position: absolute;
-          right: 5%;
-          top: 35%;
+          top: 60%;
+          transform: translate(-170%, -50%);
           visibility: hidden; }
       .wrapp-box-form-btn {
         width: 100%;
         padding: 1.5rem;
         cursor: pointer;
+        margin-top: 0.6rem;
         background-color: #38cc8c;
         border: none;
         outline: none;
@@ -170,6 +169,8 @@ body {
     .wrapp-box-form {
       padding: 1.5rem 3rem; } }
 
-.inputs.active ~ span,
+.inputs.active ~ span {
+  display: block; }
+
 .inputs.active ~ img {
   visibility: visible; }
