@@ -6,4 +6,8 @@ Your users should be able to:
    -  Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
    -  The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+https://intro-component-with-signup-frontend.netlify.app
+
+![image](https://github.com/Widoguaiquirian/intro-component-with-signup-form-master-Front-end-mentor.github.io/assets/72318958/6e2e9618-9c41-4277-b8aa-f7964c4d529a)
+
+![image](https://github.com/Widoguaiquirian/intro-component-with-signup-form-master-Front-end-mentor.github.io/assets/72318958/41cdddeb-d0d8-4a6b-90e3-3814ffc161b4)
