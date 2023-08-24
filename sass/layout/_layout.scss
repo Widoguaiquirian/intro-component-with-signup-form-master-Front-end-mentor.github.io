@@ -58,6 +58,7 @@
          background-color: white;
          border-radius: 5px;
          padding: 3rem;
+         max-height: 474px;
          max-width: 100%;
 
          &-row {
@@ -71,7 +72,7 @@
                font-size: 1.4rem;
                padding-left: 2rem;
                border-radius: 5px;
-               margin: 1.5rem 0;
+               margin: 0 0 1.5rem 0;
                border: 1px solid #dfdfdf;
                outline: none;
 
