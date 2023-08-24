@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: white; }
+
+img {
+  max-width: 100%; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 5px dashed red;
+  outline-offset: 5px; }
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 5px solid blue;
+  outline-offset: 15px; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  font-size: 1.6rem; }
+
+.uti-svg-ico {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  line-height: 0;
+  width: 3rem; }
+
+.wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 800px;
+  margin: 1rem auto;
+  background: url(/images/bg-intro-desktop.png), #ff7a7a;
+  background-repeat: no-repeat;
+  padding: 12rem 16.3rem; }
+  .wrapp-hero {
+    flex: 50%;
+    color: white;
+    max-width: 100%; }
+    .wrapp-hero-title {
+      font-size: 3.5rem; }
+    .wrapp-hero-text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding-right: 16rem;
+      line-height: 1.6; }
+  .wrapp-box {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; }
+    .wrapp-box-header {
+      background-color: #6055a5;
+      display: block;
+      padding: 1rem 8rem;
+      color: white;
+      line-height: 2;
+      width: 540px;
+      max-width: 100%;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-align: center;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.295);
+      margin-bottom: 2rem; }
+    .wrapp-box-form {
+      width: 540px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 3rem;
+      max-width: 100%; }
+      .wrapp-box-form-row {
+        width: 100%;
+        margin: 1.5rem 0;
+        position: relative; }
+        .wrapp-box-form-row input {
+          width: 100%;
+          height: 5.5rem;
+          font-size: 1.4rem;
+          padding-left: 2rem;
+          border-radius: 5px;
+          margin: 1.5rem 0;
+          border: 1px solid #dfdfdf;
+          outline: none; }
+          .wrapp-box-form-row input::placeholder {
+            font-weight: bold; }
+          .wrapp-box-form-row input:focus {
+            border: 1px solid #615c7c; }
+        .wrapp-box-form-row-message {
+          color: red;
+          font-size: 1.2rem;
+          font-style: italic;
+          margin-right: 0.1rem;
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          visibility: hidden; }
+        .wrapp-box-form-row-icon {
+          position: absolute;
+          right: 5%;
+          top: 35%;
+          visibility: hidden; }
+      .wrapp-box-form-btn {
+        width: 100%;
+        padding: 1.5rem;
+        cursor: pointer;
+        background-color: #38cc8c;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 500;
+        box-shadow: 1px 5px 3px #31b87d; }
+        .wrapp-box-form-btn:hover {
+          background-color: #89e1bb; }
+      .wrapp-box-form-copy {
+        color: gray;
+        display: block;
+        font-size: 1.2rem;
+        width: fit-content;
+        margin: 2rem auto 0 auto; }
+        .wrapp-box-form-copy span {
+          color: #ff7a7a;
+          font-weight: bold; }
+
+@media (max-width: 600px) {
+  .wrapp {
+    display: flex;
+    background: url(/images/bg-intro-mobile.png), #ff7a7a;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 7rem 2rem; }
+    .wrapp-hero {
+      margin-bottom: 3rem; }
+      .wrapp-hero-title {
+        font-weight: 500;
+        font-size: 2.5rem; }
+      .wrapp-hero-text {
+        padding: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-weight: normal; }
+    .wrapp-box-header {
+      padding: 4rem 8rem; }
+    .wrapp-box-form {
+      padding: 1.5rem 3rem; } }
+
+.inputs.active ~ span,
+.inputs.active ~ img {
+  visibility: visible; }
